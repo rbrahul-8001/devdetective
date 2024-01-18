@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+            <!-- Header -->
+            <div class="head">
+                <h2 class="heading">DevDetective</h2>
+
+                <div class="mode">
+                    <div class="moon">
+                        <p class="dark ">Dark</p>
+                        <img src="assets/images/moon-icon.svg" class="">
+                    </div>
+
+                    <div class="sun">
+                        <p class="light ">Light</p>
+                        <img src="assets/images/sun-icon.svg" class="">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SearchBar -->
+            <form class="searchBar">
+                <input class="write" type="text" placeholder="Enter a Github username... ">
+                <p class="error">no search results</p>
+                <button class="btn" type="submit">Search</button>
+            </form>
+
+            <!-- MainBox -->
+            <div class="mainBox">
+
+                <!-- left-part -->
+                <div class="left">
+                    <!-- <img src="https://avatars.githubusercontent.com/u/29489915?v=4" alt=""> -->
+                    <img src="" class="avatar">
+                </div>
+
+                <!-- right-part -->
+                <div class="right">
+
+                    <div class="top">
+                        <div class="topDiv">
+                            <p class="user-name"></p>
+                            <p class="date"> </p>
+                        </div>
+                        <a href="" class="anch" target="_blank"></a>
+                    </div>
+
+                    <p class="bio"></p>
+
+                    <div class="middle">
+                        <div>
+                            <p class="title">Repos</p>
+                            <!-- <p class="value1"></p> -->
+                            <a href="repos.html" class="value1"></a>
+                        </div>
+
+                        <div>
+                            <p class="title">Followers</p>
+                            <p class="value2"></p>
+                        </div>
+
+                        <div>
+                            <p class="title">Following</p>
+                            <p class="value3"></p>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="profile">
+                            <img src="assets/images/location-icon.svg" alt="">
+                            <p class="location"></p>
+                        </div>
+                        <div class="profile">
+                            <img src="assets/images/website-icon.svg" alt="">
+                            <p class="website"></p>
+                        </div>
+                        <div class="profile">
+                            <img src="assets/images/twitter-icon.svg" alt="">
+                            <p class="twitter"></p>
+                        </div>
+                        <div class="profile">
+                            <img src="assets/images/company-icon.svg" alt="">
+                            <p class="company"></p>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

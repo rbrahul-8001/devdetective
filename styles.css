@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f8ff;
+}
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  color: #4b6a9b;
+  font-size: 2rem;
+}
+
+.mode {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.moon {
+  /* margin: 5px; */
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b6a9b;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  margin-right: 25px;
+}
+.light {
+  margin-right: 20px;
+}
+.sun {
+  /* margin: 5px; */
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible {
+  display: none;
+}
+.visible {
+  display: flex; /* or display: block; depending on your HTML structure */
+}
+
+.searchBar {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 50px;
+  height: 70px;
+
+  background-image: url(assets/images/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position-x: 24px;
+  background-position-y: center;
+  background-size: 20px;
+
+  background-color: #fefefe;
+}
+
+.btn {
+  background-color: #0079ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 14px 28px;
+  font-size: 16px;
+  margin-right: 12px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #60abff;
+}
+
+input {
+  border: none;
+  width: 60%;
+  outline: none;
+  background: none;
+  color: #4b6a9b;
+  padding-left: 14px;
+  font-size: 20px;
+}
+
+.mainBox {
+  padding: 40px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  border-radius: 24px;
+  background-color: #fefefe;
+  margin-top: 40px;
+
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.left {
+  width: 40%;
+}
+
+.left img {
+  width: 120px;
+  border-radius: 100%;
+}
+
+.topDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2b3442;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0079ff;
+}
+
+.date {
+  font-size: 15px;
+  color: #4b6a9b;
+}
+
+.bio {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.75;
+}
+
+.middle {
+  margin: 20px 0;
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f8ff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.middle div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  text-align: start;
+  color: #4b6a9b;
+}
+
+.title {
+  font-size: 13px;
+}
+
+.value1,
+.value2,
+.value3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b3442;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px 0;
+  color: #4b6a9b;
+}
+
+.profile {
+  width: 50%;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.error {
+  font-size: 15px;
+  position: absolute;
+  color: red;
+  font-weight: bold;
+
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+
+  display: none;
+}
+
+.error.active {
+  display: flex;
+}
+
+.new {
+  background-color: #141d2f;
+}
+
+.new1 {
+  background-color: #1e2a47;
+}
+
+.lm-text {
+  background-color: white;
+}
+
+
+/* styles.css */
+
+#reposContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.repoBox {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.repoBox:hover {
+  transform: scale(1.05);
+}
+
+.repoName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2a8aca;
+  margin-bottom: 10px;
+}
+
+.repoDescription {
+  font-size: 14px;
+  color: #555;
+}
+
+.repoTopicsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.repoTopicsList li {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #f0f0f0;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #555;
+}
